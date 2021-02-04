@@ -26,8 +26,3 @@ class SatData:
                     line_to_write = "{},{},{},{},{},{}\n".format(item[8], item[9], item[10], item[11], item[12], item[13])
                     output_file.write(line_to_write)
         output_file.close()
-
-# Below is test code
-sd = SatData()
-dbns = ["02M303", "02M294", "01M450", "02M418"]
-sd.save_as_csv(dbns)
