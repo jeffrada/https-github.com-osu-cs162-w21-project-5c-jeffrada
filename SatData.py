@@ -11,7 +11,7 @@ class SatData:
             self.restored_list = json.load(infile)
 
     def save_as_csv(self, dbn_list):
-        output_file = open('output.txt', 'w')
+        output_file = open('output.csv', 'w')
         output_file.write(self.restored_list["meta"]["view"]["columns"][8]["name"])
         output_file.write(",{}".format(self.restored_list["meta"]["view"]["columns"][9]["name"]))
         output_file.write(",{}".format(self.restored_list["meta"]["view"]["columns"][10]["name"]))
